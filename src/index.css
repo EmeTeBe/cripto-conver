@@ -1,0 +1,85 @@
+:root {
+  --white: #fff;
+  --primary: #61ecbc;
+  --black: #182339;
+}
+
+html {
+  font-size: 62.5%;
+  margin: 0;
+}
+
+body {
+  background-image: url("./bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+  font-size: 2rem;
+}
+
+.container {
+  max-width: 60rem;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.app-title {
+  font-size: 3.8rem;
+  margin-top: 5rem;
+  color: var(--white);
+  line-height: 0.8;
+}
+
+.app-title span {
+  display: block;
+  color: var(--primary);
+  font-size: 4.4rem;
+}
+
+.content {
+  margin-top: 5rem;
+  padding: 6rem 2rem;
+  background-color: var(--white);
+  border-radius: 1rem;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.form,
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form label {
+  color: var(--black);
+}
+
+.form select {
+  background-color: #ecebeb;
+  border: none;
+  padding: 1rem;
+  font-size: 1.8rem;
+  border-radius: 1rem;
+}
+
+.form [type="submit"] {
+  background-color: var(--primary);
+  color: var(--black);
+  border: none;
+  padding: 1rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  font-family: "Outfit", sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  transition: background-color 300ms ease;
+}
+
+.form [type="submit"]:hover {
+  background-color: #0cb387;
+}
